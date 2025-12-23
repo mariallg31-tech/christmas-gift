@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Merry Christmas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: #12001f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.gift {
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.surprise {
+  display: none;
+  position: absolute;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.surprise img {
+  width: 100%;
+  background: white;
+  padding: 14px;
+  border-radius: 20px;
+}
+
+h2, p {
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="gift" id="gift">🎁</div>
+
+<div class="surprise" id="surprise">
+ <img src="photo.jpg" alt="Gift">
+  <h2>🎄 Merry Christmas 🎄</h2>
+  <p>
+    I love you so much ❤️<br><br>
+    You can expect your gift on <strong>January 6th</strong>.<br>
+    A tracking link will be provided soon ✨
+  </p>
+</div>
+
+<script>
+document.getElementById("gift").addEventListener("click", function () {
+  document.getElementById("gift").style.display = "none";
+  document.getElementById("surprise").style.display = "block";
+});
+</script>
+
+</body>
+</html>
